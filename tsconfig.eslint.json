@@ -1,0 +1,21 @@
+{
+    "extends": "./tsconfig.json",
+    "include": [
+        "./packages/**/*.ts",
+        "./packages/**/*.mjs",
+        "./packages/**/jest.config.ts",
+        "./packages/**/tests/*.js",
+        "./packages/**/register*.js",
+        "./packages/**/register*.mjs",
+        "./packages/**/types*.js",
+        "./packages/**/types*.mjs",
+        "./services/**/*.ts",
+        "./services/**/*.mjs",
+        "./services/**/jest.config.ts",
+        "./services/**/tests/*.js",
+        "./services/**/register*.js",
+        "./services/**/register*.mjs",
+        "./services/**/types*.js",
+        "./services/**/types*.mjs"
+    ]
+}
