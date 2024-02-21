@@ -1,0 +1,25 @@
+{
+    // Create a task to compile general code
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "npm: compile general",
+            "type": "shell",
+            "command": "fnm use && corepack enable pnpm && pnpm run --filter @animeworldid/general compile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$tsc-watch"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
+        }
+    ]
+}
