@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1708490107386,
+      "tag": "0000_loud_shooting_star",
+      "breakpoints": true
+    }
+  ]
+}
