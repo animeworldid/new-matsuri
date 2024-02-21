@@ -1,0 +1,27 @@
+[core]
+    editor = code --wait
+    fsmonitor = true
+    autocrlf = input
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
+[mergetool]
+    keepBackup = false
+[mergetool "vscode"]
+    cmd = code --wait $MERGED
+[diff]
+    tool = vscode
+[merge]
+    tool = vscode
+[commit]
+    gpgsign = true
+[tag]
+    gpgsign = true
+[pull]
+    rebase = true
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+[push]
+    autoSetupRemote = true

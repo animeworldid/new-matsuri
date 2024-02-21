@@ -1,0 +1,61 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/debian
+{
+	"name": "Matsuri Devcontainer",
+
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": {
+			"VARIANT": "bookworm"
+		}
+	},
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"moby": true,
+			"azureDnsAutoDetection": true,
+			"installDockerBuildx": true,
+			"version": "latest",
+			"dockerDashComposeVersion": "v2"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"ppa": true,
+			"version": "os-provided"
+		},
+		"ghcr.io/devcontainers/features/git-lfs:1": {
+			"autoPull": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"installDirectlyFromGitHubRelease": true,
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers-contrib/features/apt-packages": {
+			"version": "latest",
+			"packages": "build-essential,htop,vim,iputils-ping,knot-dnsutils"
+		}
+	},
+
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker",
+				"aaron-bond.better-comments",
+				"dbaeumer.vscode-eslint",
+				"codezombiech.gitignore",
+				"eamodio.gitlens",
+				"ms-vsliveshare.vsliveshare",
+				"yoavbls.pretty-ts-errors",
+				"Prisma.prisma",
+				"shardulm94.trailing-spaces",
+				"GitHub.vscode-pull-request-github",
+				"github.vscode-github-actions"
+			]
+		}
+	},
+
+	"postStartCommand": "fnm install --corepack-enabled"
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": []
+}
