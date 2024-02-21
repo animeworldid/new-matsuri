@@ -18,6 +18,52 @@ importers:
         specifier: ^1.12.4
         version: 1.12.4
 
+  packages/core:
+    dependencies:
+      '@animeworldid/database':
+        specifier: workspace:^
+        version: link:../database
+      '@animeworldid/logger':
+        specifier: workspace:^
+        version: link:../logger
+      '@nezuchan/core':
+        specifier: ^0.10.2
+        version: 0.10.2(amqplib@0.10.3)
+      '@nezuchan/framework':
+        specifier: ^0.10.2
+        version: 0.10.2
+      drizzle-orm:
+        specifier: ^0.29.3
+        version: 0.29.3(postgres@3.4.3)
+      postgres:
+        specifier: ^3.4.3
+        version: 3.4.3
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+    devDependencies:
+      '@hazmi35/eslint-config':
+        specifier: ^13.3.1
+        version: 13.3.1(@eslint/eslintrc@3.0.1)(@stylistic/eslint-plugin@1.6.2)(@typescript-eslint/eslint-plugin@7.0.2)(@typescript-eslint/parser@7.0.2)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.1.0)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@51.0.1)(eslint@8.56.0)(globals@14.0.0)(typescript@5.3.3)
+      '@types/node':
+        specifier: ^20.11.19
+        version: 20.11.19
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.0.2
+        version: 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser':
+        specifier: ^7.0.2
+        version: 7.0.2(eslint@8.56.0)(typescript@5.3.3)
+      eslint:
+        specifier: 8.56.0
+        version: 8.56.0
+      tsconfig-replace-paths:
+        specifier: ^0.0.14
+        version: 0.0.14
+      typescript:
+        specifier: 5.3.3
+        version: 5.3.3
+
   packages/database:
     dependencies:
       drizzle-orm:
@@ -89,14 +135,51 @@ importers:
         specifier: 5.3.3
         version: 5.3.3
 
+  packages/utilities:
+    dependencies:
+      '@animeworldid/core':
+        specifier: workspace:^
+        version: link:../core
+      tslib:
+        specifier: ^2.6.2
+        version: 2.6.2
+    devDependencies:
+      '@hazmi35/eslint-config':
+        specifier: ^13.3.1
+        version: 13.3.1(@eslint/eslintrc@3.0.1)(@stylistic/eslint-plugin@1.6.2)(@typescript-eslint/eslint-plugin@7.0.2)(@typescript-eslint/parser@7.0.2)(eslint-config-prettier@9.1.0)(eslint-import-resolver-typescript@3.6.1)(eslint-plugin-import@2.29.1)(eslint-plugin-jsdoc@48.1.0)(eslint-plugin-n@16.6.2)(eslint-plugin-promise@6.1.1)(eslint-plugin-tsdoc@0.2.17)(eslint-plugin-unicorn@51.0.1)(eslint@8.56.0)(globals@14.0.0)(typescript@5.3.3)
+      '@types/node':
+        specifier: ^20.11.19
+        version: 20.11.19
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^7.0.2
+        version: 7.0.2(@typescript-eslint/parser@7.0.2)(eslint@8.56.0)(typescript@5.3.3)
+      '@typescript-eslint/parser':
+        specifier: ^7.0.2
+        version: 7.0.2(eslint@8.56.0)(typescript@5.3.3)
+      eslint:
+        specifier: 8.56.0
+        version: 8.56.0
+      tsconfig-replace-paths:
+        specifier: ^0.0.14
+        version: 0.0.14
+      typescript:
+        specifier: 5.3.3
+        version: 5.3.3
+
   services/general:
     dependencies:
+      '@animeworldid/core':
+        specifier: workspace:^
+        version: link:../../packages/core
       '@animeworldid/database':
         specifier: workspace:*
         version: link:../../packages/database
       '@animeworldid/logger':
         specifier: workspace:*
         version: link:../../packages/logger
+      '@animeworldid/utilities':
+        specifier: workspace:^
+        version: link:../../packages/utilities
       '@discordjs/builders':
         specifier: ^1.7.0
         version: 1.7.0
