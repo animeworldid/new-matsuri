@@ -16,4 +16,12 @@
     "include": [
         "src"
     ],
+    "references": [
+        {
+            "path": "../../packages/database"
+        },
+        {
+            "path": "../../packages/logger"
+        }
+    ]
 }
