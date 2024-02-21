@@ -1,0 +1,23 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "tsBuildInfoFile": "./dist/.tsbuildinfo",
+        "baseUrl": ".",
+        "rootDir": "src",
+        "preserveConstEnums": true,
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ],
+    "references": [
+        {
+            "path": "../logger"
+        }
+    ]
+}
