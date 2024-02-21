@@ -22,6 +22,12 @@
         },
         {
             "path": "../../packages/logger"
+        },
+        {
+            "path": "../../packages/utilities"
+        },
+        {
+            "path": "../../packages/core"
         }
     ]
 }
