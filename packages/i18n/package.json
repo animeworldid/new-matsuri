@@ -1,15 +1,15 @@
 {
-	"name": "@animeworldid/core",
+	"name": "@animeworldid/i18n",
 	"version": "99.99.99",
-	"description": "Core library for Matsuri",
-	"homepage": "https://github.com/animeworldid/matsuri/tree/main/packages/core",
+	"description": "Internationalization for Matsuri",
+	"homepage": "https://github.com/animeworldid/matsuri/tree/main/packages/i18n",
 	"bugs": {
 		"url": "https://github.com/animeworldid/matsuri/issues"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/animeworldid/matsuri.git",
-		"directory": "packages/core"
+		"directory": "packages/i18n"
 	},
 	"license": "AGPL-3.0",
 	"author": "Anime World Indonesia <dev@animeworld.moe>",
@@ -33,14 +33,10 @@
 		"lint": "eslint"
 	},
 	"dependencies": {
-		"@animeworldid/database": "workspace:^",
-		"@animeworldid/i18n": "workspace:^",
-		"@animeworldid/logger": "workspace:^",
-		"@nezuchan/core": "^0.10.2",
-		"@nezuchan/framework": "^0.10.2",
-		"@sapphire/pieces": "^4.2.2",
-		"drizzle-orm": "^0.29.3",
-		"postgres": "^3.4.3",
+		"@discordjs/builders": "^1.7.0",
+		"@nezuchan/decorators": "^0.2.0",
+		"@nezuchan/i18n": "^3.0.0",
+		"@sapphire/pieces": "4.2.2",
 		"tslib": "^2.6.2"
 	},
 	"devDependencies": {
