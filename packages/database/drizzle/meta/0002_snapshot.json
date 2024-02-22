@@ -1,0 +1,62 @@
+{
+  "id": "615d14a9-c1b6-4f94-985c-fdce79b8609f",
+  "prevId": "a1b40534-3767-455e-9458-ce88f6bc73a8",
+  "version": "5",
+  "dialect": "pg",
+  "tables": {
+    "guilds": {
+      "name": "guilds",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    },
+    "users": {
+      "name": "users",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "bigint",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "locale": {
+          "name": "locale",
+          "type": "locale",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "'en-US'"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {
+    "locale": {
+      "name": "locale",
+      "values": {
+        "en-US": "en-US",
+        "id-ID": "id-ID"
+      }
+    }
+  },
+  "schemas": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}
