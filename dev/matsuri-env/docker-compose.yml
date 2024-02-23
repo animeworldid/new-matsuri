@@ -50,6 +50,18 @@ services:
     depends_on:
       gateway-store: { condition: service_healthy }
 
+  gateway-cache:
+    image: ghcr.io/nezuchan/kanao-cache:latest-dev
+    deploy:
+      replicas: 1
+    env_file:
+      - gateway.env
+      - token.env
+      - gateway-store.env
+    depends_on:
+      gateway-store: { condition: service_healthy }
+    restart: unless-stopped
+
 volumes:
   lavinmq:
   postgres:
