@@ -39,6 +39,7 @@
 		"@nezuchan/core": "^0.10.2",
 		"@nezuchan/framework": "^0.10.2",
 		"@sapphire/pieces": "^4.2.2",
+		"@sapphire/result": "^2.6.6",
 		"drizzle-orm": "^0.29.3",
 		"postgres": "^3.4.3",
 		"tslib": "^2.6.2"

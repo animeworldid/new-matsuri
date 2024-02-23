@@ -1,3 +1,5 @@
+import "@/lib/patches/CommandLocalization.js";
+
 import * as schema from "@animeworldid/database";
 import { i18nManager } from "@animeworldid/i18n";
 import { createLogger } from "@animeworldid/logger";
@@ -6,7 +8,7 @@ import { FrameworkClient } from "@nezuchan/framework";
 import { container } from "@sapphire/pieces";
 import { drizzle } from "drizzle-orm/postgres-js";
 import postgres from "postgres";
-import { databaseUrl, isDev } from "../env/index.js";
+import { databaseUrl, isDev } from "@/lib/env/index.js";
 
 export class BaseClient extends FrameworkClient {
     public readonly drizzle = drizzle(postgres(databaseUrl), { schema });
@@ -41,5 +43,13 @@ export class BaseClient extends FrameworkClient {
     public async shutdown(): Promise<void> {
         this.logger.warn("Shutting down...");
         await this.amqp.close();
+    }
+}
+
+declare module "@nezuchan/core" {
+    interface Client {
+        drizzle: BaseClient["drizzle"];
+        logger: BaseClient["logger"];
+        i18n: BaseClient["i18n"];
     }
 }
