@@ -16,12 +16,13 @@ import { eq } from "drizzle-orm";
 
 export class PingCommand extends Command {
     public async chatInputRun(interaction: BaseInteraction): Promise<BaseInteraction> {
+        const loc = this.container.client.i18n.get(await interaction.fetchUserLocalization());
         const shardCount = await this.container.client.fetchShardCount();
         const currentShardId = Number(BigInt(interaction.guildId!) >> 22n) % shardCount;
         const gatewayStatus = await this.container.client.store.query.status.findFirst({
             where: () => eq(schema.status.shardId, currentShardId)
         });
 
-        return interaction.reply({ content: `Took me ${gatewayStatus?.latency ?? -1}ms to reply` });
+        return interaction.reply({ content: loc.commands.utility.PING_SUCCESS_LATENCY(gatewayStatus?.latency ?? -1) });
     }
 }
