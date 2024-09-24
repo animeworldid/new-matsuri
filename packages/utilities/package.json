@@ -36,11 +36,11 @@
 		"tslib": "^2.6.2"
 	},
 	"devDependencies": {
-		"@hazmi35/eslint-config": "^13.3.1",
+		"@hazmi35/eslint-config": "^14.0.1",
 		"@types/node": "^20.11.19",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
-		"@typescript-eslint/parser": "^7.0.2",
-		"eslint": "8.56.0",
+		"@typescript-eslint/eslint-plugin": "^8.7.0",
+		"@typescript-eslint/parser": "^8.7.0",
+		"eslint": "9.11.1",
 		"tsconfig-replace-paths": "^0.0.14",
 		"typescript": "5.3.3"
 	},
