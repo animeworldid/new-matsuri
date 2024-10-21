@@ -33,7 +33,7 @@
 		"lint": "eslint"
 	},
 	"dependencies": {
-		"pino": "^8.19.0",
+		"pino": "^9.0.0",
 		"pino-loki": "^2.2.1",
 		"pino-pretty": "^10.3.1",
 		"tslib": "^2.6.2"
