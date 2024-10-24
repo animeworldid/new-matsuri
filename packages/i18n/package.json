@@ -34,7 +34,7 @@
 	},
 	"dependencies": {
 		"@discordjs/builders": "^1.7.0",
-		"@nezuchan/decorators": "^0.2.0",
+		"@nezuchan/decorators": "^0.3.0",
 		"@nezuchan/i18n": "^3.0.0",
 		"@sapphire/pieces": "4.2.2",
 		"tslib": "^2.6.2"
