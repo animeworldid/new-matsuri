@@ -55,7 +55,7 @@
         "@types/amqplib": "^0.10.4",
         "@types/common-tags": "^1.8.4",
         "@types/gradient-string": "^1.1.5",
-        "@types/ms": "^0.7.34",
+        "@types/ms": "^2.1.0",
         "@types/node": "^20.11.19",
         "@typescript-eslint/eslint-plugin": "^7.0.2",
         "@typescript-eslint/parser": "^7.0.2",
