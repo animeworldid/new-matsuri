@@ -10,7 +10,7 @@ services:
       - lavinmq:/var/lib/lavinmq
 
   postgres:
-    image: docker.io/library/postgres:16-alpine
+    image: docker.io/library/postgres:17-alpine
     healthcheck:
      test: ["CMD", "sh", "-c", "pg_isready -U $$POSTGRES_USER -h $$(hostname -i)"]
      interval: 5s
@@ -26,7 +26,7 @@ services:
       - postgres:/var/lib/postgresql/data
 
   gateway-store:
-    image: docker.io/library/postgres:16-alpine
+    image: docker.io/library/postgres:17-alpine
     healthcheck:
      test: ["CMD", "sh", "-c", "pg_isready -U $$POSTGRES_USER -h $$(hostname -i)"]
      interval: 5s
