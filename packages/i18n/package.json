@@ -41,7 +41,7 @@
 	},
 	"devDependencies": {
 		"@hazmi35/eslint-config": "^13.3.1",
-		"@types/node": "^20.11.19",
+		"@types/node": "^22.18.12",
 		"@typescript-eslint/eslint-plugin": "^7.0.2",
 		"@typescript-eslint/parser": "^7.0.2",
 		"eslint": "8.56.0",
@@ -49,7 +49,7 @@
 		"typescript": "5.3.3"
 	},
 	"engines": {
-		"node": ">=20.6.1",
+		"node": ">=22.21.0",
 		"pnpm": ">=8.7.0"
 	},
 	"readme": "https://github.com/animeworldid/matsuri/blob/main/README.md"
