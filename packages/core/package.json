@@ -55,7 +55,7 @@
 	},
 	"engines": {
 		"node": ">=20.6.1",
-		"pnpm": ">=8.7.0"
+		"pnpm": ">=10.33.4"
 	},
 	"readme": "https://github.com/animeworldid/matsuri/blob/main/README.md"
 }
