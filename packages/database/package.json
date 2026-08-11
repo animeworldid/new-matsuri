@@ -40,8 +40,8 @@
 	"devDependencies": {
 		"@hazmi35/eslint-config": "^13.3.1",
 		"@types/node": "^20.11.19",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
-		"@typescript-eslint/parser": "^7.0.2",
+		"@typescript-eslint/eslint-plugin": "^8.67.0",
+		"@typescript-eslint/parser": "^8.67.0",
 		"drizzle-kit": "^0.20.14",
 		"eslint": "8.56.0",
 		"tsconfig-replace-paths": "^0.0.14",
