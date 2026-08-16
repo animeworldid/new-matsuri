@@ -34,22 +34,22 @@
 		"lint": "eslint"
 	},
 	"dependencies": {
-		"drizzle-orm": "^0.29.3",
-		"postgres": "^3.4.3"
+		"drizzle-orm": "^0.45.2",
+		"postgres": "^3.4.9"
 	},
 	"devDependencies": {
 		"@hazmi35/eslint-config": "^13.3.1",
-		"@types/node": "^20.11.19",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
-		"@typescript-eslint/parser": "^7.0.2",
-		"drizzle-kit": "^0.20.14",
-		"eslint": "8.56.0",
-		"tsconfig-replace-paths": "^0.0.14",
-		"typescript": "5.3.3"
+		"@types/node": "^20.19.43",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"drizzle-kit": "^0.31.10",
+		"eslint": "8.57.1",
+		"tsconfig-replace-paths": "^0.0.18",
+		"typescript": "5.9.3"
 	},
 	"engines": {
-		"node": ">=20.6.1",
-		"pnpm": ">=8.7.0"
+		"node": ">=20.20.2",
+		"pnpm": ">=8.15.9"
 	},
 	"readme": "https://github.com/animeworldid/matsuri/blob/main/README.md"
 }

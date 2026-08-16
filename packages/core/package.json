@@ -36,26 +36,26 @@
 		"@animeworldid/database": "workspace:^",
 		"@animeworldid/i18n": "workspace:^",
 		"@animeworldid/logger": "workspace:^",
-		"@nezuchan/core": "^0.10.2",
-		"@nezuchan/framework": "^0.10.2",
-		"@sapphire/pieces": "^4.2.2",
-		"@sapphire/result": "^2.6.6",
-		"drizzle-orm": "^0.29.3",
-		"postgres": "^3.4.3",
-		"tslib": "^2.6.2"
+		"@nezuchan/core": "^0.19.4",
+		"@nezuchan/framework": "^0.19.7",
+		"@sapphire/pieces": "^4.4.1",
+		"@sapphire/result": "^2.8.0",
+		"drizzle-orm": "^0.45.2",
+		"postgres": "^3.4.9",
+		"tslib": "^2.8.1"
 	},
 	"devDependencies": {
 		"@hazmi35/eslint-config": "^13.3.1",
-		"@types/node": "^20.11.19",
-		"@typescript-eslint/eslint-plugin": "^7.0.2",
-		"@typescript-eslint/parser": "^7.0.2",
-		"eslint": "8.56.0",
-		"tsconfig-replace-paths": "^0.0.14",
-		"typescript": "5.3.3"
+		"@types/node": "^20.19.43",
+		"@typescript-eslint/eslint-plugin": "^7.18.0",
+		"@typescript-eslint/parser": "^7.18.0",
+		"eslint": "8.57.1",
+		"tsconfig-replace-paths": "^0.0.18",
+		"typescript": "5.9.3"
 	},
 	"engines": {
-		"node": ">=20.6.1",
-		"pnpm": ">=8.7.0"
+		"node": ">=20.20.2",
+		"pnpm": ">=8.15.9"
 	},
 	"readme": "https://github.com/animeworldid/matsuri/blob/main/README.md"
 }
