@@ -2,7 +2,7 @@ version: '3'
 
 services:
   lavinmq:
-    image: docker.io/cloudamqp/lavinmq:latest
+    image: docker.io/cloudamqp/lavinmq:latest@sha256:3eb54c12916d700a978c2ea86e6362cd4974b0e3189508718006d4e6d341246b
     ports:
       - 5672:5672
       - 15672:15672
@@ -10,7 +10,7 @@ services:
       - lavinmq:/var/lib/lavinmq
 
   postgres:
-    image: docker.io/library/postgres:16-alpine
+    image: docker.io/library/postgres:16-alpine@sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685
     healthcheck:
      test: ["CMD", "sh", "-c", "pg_isready -U $$POSTGRES_USER -h $$(hostname -i)"]
      interval: 5s
@@ -26,7 +26,7 @@ services:
       - postgres:/var/lib/postgresql/data
 
   gateway-store:
-    image: docker.io/library/postgres:16-alpine
+    image: docker.io/library/postgres:16-alpine@sha256:cf78e76683b9ca8c5733cbbdce6c9262b45b6767934dd0a95e671f9a0fc20685
     healthcheck:
      test: ["CMD", "sh", "-c", "pg_isready -U $$POSTGRES_USER -h $$(hostname -i)"]
      interval: 5s
@@ -42,7 +42,7 @@ services:
       - gw-store:/var/lib/postgresql/data
 
   gateway:
-    image: ghcr.io/nezuchan/kanao-gateway:latest-dev
+    image: ghcr.io/nezuchan/kanao-gateway:latest-dev@sha256:3c7082bac2a29caf926d73206661074011f78eff075a23d654e8a96e524efd61
     env_file:
       - gateway.env
       - gateway-store.env
@@ -51,7 +51,7 @@ services:
       gateway-store: { condition: service_healthy }
 
   gateway-cache:
-    image: ghcr.io/nezuchan/kanao-cache:latest-dev
+    image: ghcr.io/nezuchan/kanao-cache:latest-dev@sha256:fde42635458493263cacad85ce0de1408e0c4fa34a0d4e35904838113360a31c
     deploy:
       replicas: 1
     env_file:
