@@ -11,22 +11,22 @@
 	},
 
 	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2@sha256:25b9f05705ffba7dbe503230ac76081419306f8c8bc88e0ce78c4ecd99a0c78c": {
 			"moby": true,
 			"azureDnsAutoDetection": true,
 			"installDockerBuildx": true,
 			"version": "latest",
 			"dockerDashComposeVersion": "v2"
 		},
-		"ghcr.io/devcontainers/features/git:1": {
+		"ghcr.io/devcontainers/features/git:1@sha256:fd75977de13a9979000e0e78baf949adb0ca71d2398995fa22e0a36d7e7e7fe2": {
 			"ppa": true,
 			"version": "os-provided"
 		},
-		"ghcr.io/devcontainers/features/git-lfs:1": {
+		"ghcr.io/devcontainers/features/git-lfs:1@sha256:71c2b371cf12ab7fcec47cf17369c6f59156100dad9abf9e4c593049d789de72": {
 			"autoPull": true,
 			"version": "latest"
 		},
-		"ghcr.io/devcontainers/features/github-cli:1": {
+		"ghcr.io/devcontainers/features/github-cli:1@sha256:94879eebb6a0e4e2f197de9f12db7427cb4a25b82d93c55239ce8c8fc394a1b4": {
 			"installDirectlyFromGitHubRelease": true,
 			"version": "latest"
 		},
