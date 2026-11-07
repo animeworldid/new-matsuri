@@ -1,5 +1,5 @@
 # [Choice] Debian version (use bullseye on local arm64/Apple Silicon): bullseye, buster
-ARG VARIANT=bullseye
+ARG VARIANT=bullseye@sha256:d233ca1cefb8829b5a474659dc32537652772d702bdc49a20f366eedf588da35
 FROM mcr.microsoft.com/vscode/devcontainers/base:${VARIANT}
 
 # ** [Optional] Uncomment this section to install additional packages. **
