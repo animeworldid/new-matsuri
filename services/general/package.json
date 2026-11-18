@@ -51,7 +51,7 @@
         "zod": "^3.22.4"
     },
     "devDependencies": {
-        "@hazmi35/eslint-config": "^13.3.1",
+        "@hazmi35/eslint-config": "^15.2.2",
         "@types/amqplib": "^0.10.4",
         "@types/common-tags": "^1.8.4",
         "@types/gradient-string": "^1.1.5",
