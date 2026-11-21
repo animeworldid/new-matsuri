@@ -67,8 +67,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       tsconfig-replace-paths:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^1.0.0
+        version: 1.0.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -101,8 +101,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       tsconfig-replace-paths:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^1.0.0
+        version: 1.0.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -141,8 +141,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       tsconfig-replace-paths:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^1.0.0
+        version: 1.0.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -178,8 +178,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       tsconfig-replace-paths:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^1.0.0
+        version: 1.0.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -206,8 +206,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       tsconfig-replace-paths:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^1.0.0
+        version: 1.0.0
       typescript:
         specifier: 5.3.3
         version: 5.3.3
@@ -330,8 +330,8 @@ importers:
         specifier: ^5.0.5
         version: 5.0.5
       tsconfig-replace-paths:
-        specifier: ^0.0.14
-        version: 0.0.14
+        specifier: ^1.0.0
+        version: 1.0.0
       typescript:
         specifier: ~5.3.3
         version: 5.3.3
@@ -1423,13 +1423,6 @@ packages:
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
     dev: true
 
-  /@types/glob@7.2.0:
-    resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
-    dependencies:
-      '@types/minimatch': 5.1.2
-      '@types/node': 20.11.19
-    dev: true
-
   /@types/gradient-string@1.1.5:
     resolution: {integrity: sha512-Z2VPQ0q+IhrAO7XjJSjpDsoPc+CsCshRNah1IE9LCo/NzHMHylssvx73i0BAKzuaGj9cdhmgq9rLaietpYAbKQ==}
     dependencies:
@@ -1453,10 +1446,6 @@ packages:
     dependencies:
       '@types/node': 20.11.19
     dev: false
-
-  /@types/minimatch@5.1.2:
-    resolution: {integrity: sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==}
-    dev: true
 
   /@types/ms@0.7.34:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
@@ -2083,10 +2072,6 @@ packages:
     resolution: {integrity: sha512-y4Mg2tXshplEbSGzx7amzPwKKOCGuoSRP/CjEdwwk0FOGlUbq6lKuoyDZTNZkmxHdJtp54hdfY/JUrdL7Xfdug==}
     engines: {node: '>=14'}
     dev: false
-
-  /commander@3.0.2:
-    resolution: {integrity: sha512-Gar0ASD4BDyKC4hl4DwHqDrmvjoxWKZigVnAbn5H1owvm4CxCPdb0HQDehwNYMJpla5+M2tPmPARzhtYuwpHow==}
-    dev: true
 
   /commander@9.5.0:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
@@ -3171,20 +3156,6 @@ packages:
       define-properties: 1.2.1
     dev: true
 
-  /globby@10.0.2:
-    resolution: {integrity: sha512-7dUi7RvCoT/xast/o/dLN53oqND4yk0nsHkhRgn9w65C4PofCLOoJ39iSOg+qVDdWQPIEj+eszMHQ+aLVwwQSg==}
-    engines: {node: '>=8'}
-    dependencies:
-      '@types/glob': 7.2.0
-      array-union: 2.1.0
-      dir-glob: 3.0.1
-      fast-glob: 3.3.2
-      glob: 7.2.3
-      ignore: 5.3.1
-      merge2: 1.4.1
-      slash: 3.0.0
-    dev: true
-
   /globby@11.1.0:
     resolution: {integrity: sha512-jhIXaOzy1sb8IyocaruWSn1TjmnBVs8Ayhcy83rmxNJ8q2uWKCAj3CnJY+KpGSXCueAPc0i05kVvVKtP1t9S3g==}
     engines: {node: '>=10'}
@@ -3632,12 +3603,6 @@ packages:
     hasBin: true
     dependencies:
       minimist: 1.2.8
-    dev: true
-
-  /json5@2.2.3:
-    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
-    engines: {node: '>=6'}
-    hasBin: true
     dev: true
 
   /keyv@4.5.4:
@@ -4630,13 +4595,12 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tsconfig-replace-paths@0.0.14:
-    resolution: {integrity: sha512-If9w1Z/HdSJkrZvCRSKHA3vAL3SwRWvI7rLmuTozlmKuBjPF/R8dWJku5C9ncOqiTOd8Dzd7SZ1cIYVZfpva8g==}
+  /tsconfig-replace-paths@1.0.0:
+    resolution: {integrity: sha512-yY7FTFt3YzqnDFMoK8+DmO9ajLrjLmxZR6TnDc/Aq3pIb+eH08YsQXpP1uyq9EJb9GQ9x9O9ejoJr0yijPXEJA==}
+    engines: {node: '>=18'}
     hasBin: true
     dependencies:
-      commander: 3.0.2
-      globby: 10.0.2
-      json5: 2.2.3
+      typescript: 5.9.3
     dev: true
 
   /tslib@2.6.2:
@@ -4779,6 +4743,12 @@ packages:
 
   /typescript@5.3.3:
     resolution: {integrity: sha512-pXWcraxM0uxAS+tN0AG/BF2TyqmHO014Z070UsJ+pFvYuRSq8KH8DmWpnbXe0pEPDHXZV3FcAbJkijJ5oNEnWw==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: true
+
+  /typescript@5.9.3:
+    resolution: {integrity: sha512-jl1vZzPDinLr9eUt3J/t7V6FgNEw9QjvBPdysz9KfQDD41fQrC2Y4vKQdiaUpFT4bXlb1RHhLpp8wtm6M5TgSw==}
     engines: {node: '>=14.17'}
     hasBin: true
     dev: true

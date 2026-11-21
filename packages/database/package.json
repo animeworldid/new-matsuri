@@ -44,7 +44,7 @@
 		"@typescript-eslint/parser": "^7.0.2",
 		"drizzle-kit": "^0.20.14",
 		"eslint": "8.56.0",
-		"tsconfig-replace-paths": "^0.0.14",
+		"tsconfig-replace-paths": "^1.0.0",
 		"typescript": "5.3.3"
 	},
 	"engines": {
